@@ -12,7 +12,7 @@ String managerEmail
 
 String office
 
-String deparment
+String department
 
     static constraints = {
 	fullName blank:false, nullable:false
