@@ -18,6 +18,12 @@ String taxCode
 
 String contract
 
+//unit testing - function to calculate an 8 hour salary
+float calculateSalary(){
+
+	8*hourlyRate
+}
+
 
     static constraints = {
 	fullName blank:false, nullable:false
