@@ -14,6 +14,11 @@ String office
 
 String department
 
+String toString(){
+return "$fullName, $office, $department"
+
+}
+
     static constraints = {
 	fullName blank:false, nullable:false
 	userName blank:false, nullable:false, unique:true
