@@ -10,9 +10,15 @@ class TeamSpec extends Specification implements DomainUnitTest<Team> {
 
     def cleanup() {
     }
+	void checkCase() {
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
-    }
+   	when:"Team's name has upper case"
+	def convert=new Team(
+	teamName:'Isaac Newton',
+	password:'secret2018')
+
+	then:"the validate password will be successful. "
+	convert.changingCase()=='isaac newton'
+
+	}
 }

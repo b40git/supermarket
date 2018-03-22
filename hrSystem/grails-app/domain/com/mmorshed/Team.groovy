@@ -11,7 +11,10 @@ String sectionName
 String description
 
 
+String changingCase(){
+return teamName.toLowerCase();
 
+}
 
     static constraints = {
 	teamName blank:false, nullable:false
