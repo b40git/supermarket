@@ -11,8 +11,16 @@ class TeamleaderSpec extends Specification implements DomainUnitTest<Teamleader>
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void checkEmail() {
+
+	when:"Team Leader's password is over six characters"
+	def frank=new Teamleader(
+	fullName:'Isaac Newton',
+	password:'secret2018')
+
+	then:"the validate password will be successful. "
+	frank.validatingPassword()==true
+
+        
     }
 }

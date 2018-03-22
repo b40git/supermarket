@@ -16,6 +16,11 @@ String leaderEmail
 
 String password
 
+Boolean validatingPassword(){
+if (password.length() > 6)
+return true;
+
+}
 
     static constraints = {
 	fullName blank:false, nullable:false
