@@ -11,8 +11,18 @@ class ShiftSpec extends Specification implements DomainUnitTest<Shift> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void checkShiftLength() {
+
+	when:"Shift is under 12 hours"
+	def shiftnumber3=new Shift(
+	timeOfDay:'Morning',
+	dayOfWeek:'Tuesday',
+	numberOfHours:11,
+	startingTime:'12:00am')
+
+	then:"the shift control test will be successful. "
+	shiftnumber3.shiftControl()==true
+
+        
     }
 }

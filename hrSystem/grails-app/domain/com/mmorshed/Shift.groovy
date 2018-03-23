@@ -10,6 +10,11 @@ int numberOfHours
 
 String startingTime
 
+Boolean shiftControl(){
+if (numberOfHours < 12)
+return true;
+
+}
 
     static constraints = {
 	timeOfDay blank:false, nullable:false
