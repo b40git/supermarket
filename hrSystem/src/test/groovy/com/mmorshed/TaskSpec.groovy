@@ -11,8 +11,16 @@ class TaskSpec extends Specification implements DomainUnitTest<Task> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+  void checkPeople() {
+
+	when:"Task is created with more than 0 people"
+	def cleaning=new Task(
+	taskName:'Cleaning Shelves',
+	numberOfPeople:1)
+
+	then:"the people check test will be successful. "
+	cleaning.peopleCheck()==true
+
+        
     }
 }

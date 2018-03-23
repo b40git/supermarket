@@ -16,6 +16,12 @@ String description
 
 Boolean taskCompleted
 
+Boolean peopleCheck(){
+if (numberOfPeople > 0)
+return true;
+
+}
+
     static constraints = {
 	taskName blank:false, nullable:false
 	numberOfPeople blank:false, nullable:false
