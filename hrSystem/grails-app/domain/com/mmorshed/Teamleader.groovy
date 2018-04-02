@@ -18,6 +18,8 @@ String password
 
 Employee employee
 
+Team team
+
 Boolean validatingPassword(){
 if (password.length() > 6)
 return true;
