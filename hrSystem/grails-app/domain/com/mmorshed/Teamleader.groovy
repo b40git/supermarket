@@ -20,6 +20,8 @@ Employee employee
 
 Team team
 
+static hasMany=[managers:Manager]
+
 Boolean validatingPassword(){
 if (password.length() > 6)
 return true;
