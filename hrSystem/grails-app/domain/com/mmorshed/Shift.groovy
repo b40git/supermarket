@@ -10,6 +10,8 @@ int numberOfHours
 
 String startingTime
 
+Employee employee
+
 Boolean shiftControl(){
 if (numberOfHours < 12)
 return true;
