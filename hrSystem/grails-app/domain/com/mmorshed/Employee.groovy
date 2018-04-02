@@ -18,6 +18,8 @@ String taxCode
 
 String contract
 
+static hasMany=[shifts:Shift]
+
 //unit testing - function to calculate an 8 hour salary
 float calculateSalary(){
 
