@@ -18,7 +18,7 @@ String taxCode
 
 String contract
 
-static hasMany=[shifts:Shift]
+static hasMany=[shifts:Shift, managers:Manager]
 
 //unit testing - function to calculate an 8 hour salary
 float calculateSalary(){
