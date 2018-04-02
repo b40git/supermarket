@@ -14,6 +14,8 @@ String office
 
 String department
 
+Teamleader teamleader
+
 String toString(){
 return "$fullName, $office, $department"
 
