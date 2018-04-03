@@ -16,6 +16,8 @@ String description
 
 Boolean taskCompleted
 
+static hasMany=[shifts:Shift]
+
 Boolean peopleCheck(){
 if (numberOfPeople > 0)
 return true;

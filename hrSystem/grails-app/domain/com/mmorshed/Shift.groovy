@@ -12,6 +12,10 @@ String startingTime
 
 Employee employee
 
+static hasMany=[tasks:Task]
+
+static belongsTo=[Task]
+
 Boolean shiftControl(){
 if (numberOfHours < 12)
 return true;
