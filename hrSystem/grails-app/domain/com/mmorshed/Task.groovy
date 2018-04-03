@@ -16,7 +16,9 @@ String description
 
 Boolean taskCompleted
 
-static hasMany=[shifts:Shift]
+static hasMany=[shifts:Shift, employees:Employee]
+
+static belongsTo=[Employee]
 
 Boolean peopleCheck(){
 if (numberOfPeople > 0)
