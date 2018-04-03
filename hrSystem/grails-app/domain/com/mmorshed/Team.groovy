@@ -12,6 +12,7 @@ String description
 
 Teamleader teamleader
 
+static hasMany=[shifts:Shift]
 
 String changingCase(){
 return teamName.toLowerCase();

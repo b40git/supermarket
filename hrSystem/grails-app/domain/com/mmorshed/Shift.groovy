@@ -12,9 +12,9 @@ String startingTime
 
 Employee employee
 
-static hasMany=[tasks:Task]
+static hasMany=[tasks:Task, teams:Team]
 
-static belongsTo=[Task]
+static belongsTo=[Task, Team]
 
 Boolean shiftControl(){
 if (numberOfHours < 12)
