@@ -18,6 +18,7 @@ Teamleader teamleader
 
 Employee employee
 
+
 String toString(){
 return "$fullName, $office, $department"
 
@@ -30,6 +31,8 @@ return "$fullName, $office, $department"
 	managerEmail blank:false, nullable:false, email:true
 	office blank:false, nullable:false
 	department blank:false, nullable:false
+	teamleader blank:false, nullable:false
+	employee blank:false, nullable:false
 	
     }
 }

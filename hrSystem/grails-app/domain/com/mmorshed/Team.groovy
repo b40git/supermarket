@@ -10,7 +10,7 @@ String sectionName
 
 String description
 
-Teamleader teamleader
+static hasOne=[teamleader:Teamleader]
 
 static hasMany=[shifts:Shift, tasks:Task, employees:Employee]
 

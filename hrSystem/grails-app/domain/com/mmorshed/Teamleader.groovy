@@ -36,5 +36,7 @@ return true;
 	officePhone blank:false, nullable:false
 	leaderEmail blank:false, nullable:false, email:true
 	password blank:false, nullable:false
+	employee blank:false, nullable:false
+	team blank:false, nullable:false
     }
 }
