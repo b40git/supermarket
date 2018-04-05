@@ -16,6 +16,10 @@ static hasMany=[tasks:Task, teams:Team]
 
 static belongsTo=[Task, Team]
 
+String toString(){
+return timeOfDay
+}
+
 Boolean shiftControl(){
 if (numberOfHours < 12)
 return true;

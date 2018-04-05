@@ -20,6 +20,10 @@ Employee employee
 
 Team team
 
+String toString(){
+return fullName
+}
+
 static hasMany=[managers:Manager]
 
 Boolean validatingPassword(){
